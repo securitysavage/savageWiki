@@ -1,8 +1,8 @@
-# dockerfile for SavageWiki
+# Dockerfile for SavageWiki
 #
-# based on https://peppe8o.com/personal-mediawiki-with-raspberry-pi-and-docker/
+# Based on https://peppe8o.com/personal-mediawiki-with-raspberry-pi-and-docker/
 #
-# written and performed by @securitysavage
+# Written and performed by @securitysavage
 
 FROM debian
 RUN apt update && apt install mariadb-server -y
