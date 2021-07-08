@@ -1,0 +1,34 @@
+# SavageWiki: a MediaWiki project automated with Docker
+#
+# Based on https://kalifornia909.info/post/media-wiki-docker/
+# and https://peppe8o.com/personal-mediawiki-with-raspberry-pi-and-docker/
+# 
+# Written and peformed by @securitysavage
+
+version: '3.7'
+services:
+  mediawiki:
+    image: mediawiki
+    restart: unless-stopped
+    ports:
+      - 8080:80 # Mirror 8080 external to 80 internal on MW container
+    links:
+      - database # Link to database defined below
+    volumes:
+      - mediawiki-www:/var/www/html # Persistence for MediaWiki infra
+  # After initial MW setup, download LocalSettings.php to this yml's directory,
+  # then uncomment the following line and restart mediawiki via compose
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php
+  database:
+    image: mariadb
+    restart: unless-stopped
+    volumes:
+      - mediawiki-db:/var/lib/mysql # Persistence for your data
+    environment:
+      MYSQL_DATABASE: savagewiki_database_1:3306 # Name your database
+      MYSQL_USER: savage # Name your user
+      MYSQL_PASSWORD: savagewiki # Choose a user password
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes' # Practice safe cyber, friends
+volumes:
+  mediawiki-www:
+  mediawiki-db:
