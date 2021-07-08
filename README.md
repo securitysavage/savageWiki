@@ -19,9 +19,9 @@
 
 Based on [this blog](https://kalifornia909.info/post/media-wiki-docker/) and [this one](https://peppe8o.com/personal-mediawiki-with-raspberry-pi-and-docker/).
 
-(1) Docs at https://docs.docker.com/engine/install/, Linux installation walkthrough [here](https://davidbarszczak.com/index.php/2020/03/02/install-docker-on-ubuntu-18-04/).
+(1) Docs for all platforms at https://docs.docker.com/engine/install/, Linux installation walkthrough [here](https://davidbarszczak.com/index.php/2020/03/02/install-docker-on-ubuntu-18-04/).
 
-(2) Docs at https://docs.docker.com/compose/install/, Linux installation walkthrough [here](https://davidbarszczak.com/index.php/2020/03/03/install-docker-compose-on-ubuntu-18-04/).
+(2) Docs for all platforms at https://docs.docker.com/compose/install/, Linux installation walkthrough [here](https://davidbarszczak.com/index.php/2020/03/03/install-docker-compose-on-ubuntu-18-04/).
 
 (3) If ```docker-compose up -d``` times out, the command ```COMPOSE_HTTP_TIMEOUT=200 docker-compose up -d``` is a useful workaround (or just retry the command).
 
