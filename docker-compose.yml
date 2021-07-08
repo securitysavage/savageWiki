@@ -3,7 +3,7 @@
 # Based on https://kalifornia909.info/post/media-wiki-docker/
 # and https://peppe8o.com/personal-mediawiki-with-raspberry-pi-and-docker/
 # 
-# Written and peformed by @securitysavage
+# Written and performed by @securitysavage
 
 version: '3.7'
 services:
