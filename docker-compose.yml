@@ -28,6 +28,7 @@ services:
       MYSQL_DATABASE: savagewiki_database_1:3306 # Name your database
       MYSQL_USER: savage # Name your user
       MYSQL_PASSWORD: savagewiki # Choose a user password
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes' # Practice safe cyber, friends
 volumes:
   mediawiki-www:
   mediawiki-db:
