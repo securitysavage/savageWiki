@@ -18,7 +18,7 @@ services:
       - mediawiki-www:/var/www/html # Persistence for MediaWiki infra
   # After initial MW setup, download LocalSettings.php to this yml's directory,
   # then uncomment the following line and restart mediawiki via compose
-      - ./LocalSettings.php:/var/www/html/LocalSettings.php
+      #- ./LocalSettings.php:/var/www/html/LocalSettings.php
   database:
     image: mariadb
     restart: unless-stopped
