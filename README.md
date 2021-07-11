@@ -27,4 +27,6 @@ Based on [this blog](https://kalifornia909.info/post/media-wiki-docker/) and [th
 
 (4) For step 6, make sure the hyphen in ```- ./LocalSettings.php:/var/www/html/LocalSettings.php``` lines up with the ```- mediawiki-www:/var/www/html``` entry when you uncomment it, or MediaWiki will not see your configuration.
 
+Tested and working on Ubuntu and MacOS.
+
 Twitter: [@securitysavage](https://twitter.com/securitysavage)
