@@ -25,6 +25,6 @@ Based on [this blog](https://kalifornia909.info/post/media-wiki-docker/) and [th
 
 (3) If ```docker-compose up -d``` times out, the command ```COMPOSE_HTTP_TIMEOUT=200 docker-compose up -d``` is a useful workaround (or just retry the command).
 
-(4) For step 6, make sure the hyphen in ```- ./LocalSettings.php:/var/www/html/LocalSettings.php``` lines up with the ```- mediawiki-www:/var/www/html``` entry, or MediaWiki will not see your configuration.
+(4) For step 6, make sure the hyphen in ```- ./LocalSettings.php:/var/www/html/LocalSettings.php``` lines up with the ```- mediawiki-www:/var/www/html``` entry when you uncomment it, or MediaWiki will not see your configuration.
 
 Twitter: [@securitysavage](https://twitter.com/securitysavage)
