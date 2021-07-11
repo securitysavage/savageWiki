@@ -20,7 +20,7 @@ services:
   # then uncomment the following line and restart mediawiki via compose
       #- ./LocalSettings.php:/var/www/html/LocalSettings.php
   database:
-    image: mariadb
+    build: .
     restart: unless-stopped
     volumes:
       - mediawiki-db:/var/lib/mysql # Persistence for your data
