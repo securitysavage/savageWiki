@@ -29,4 +29,4 @@ Based on [this blog](https://kalifornia909.info/post/media-wiki-docker/) and [th
 
 Tested and working on Ubuntu and MacOS.
 
-Twitter: [@securitysavage](https://twitter.com/securitysavage)
+Official shitposting account: [@securitysavage](https://twitter.com/securitysavage)
